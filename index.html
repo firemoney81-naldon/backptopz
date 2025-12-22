@@ -1,23 +1,626 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Home</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
-    <link rel="stylesheet" href="styles.css" />
-    <script type="module" src="script.js"></script>
-  </head>
-  <body>
-    <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
-    </nav>
-    <main>
-      <h1>Home page</h1>
-    </main>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  
+  
+  
+  <title>남들 다 할인받을 때 당신만 비싸게 가입한 자동차보험의 진실</title>
+
+  
+  
+  <style>
+        :root {
+            --bg-color: #f8f9fa;
+            --primary-color: #6c5ce7;
+            --secondary-color: #00cec9;
+            --accent-color: #ff7675;
+            --text-main: #2d3436;
+            --text-sub: #636e72;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: var(--text-sub);
+            font-size: 1.1rem;
+        }
+
+        /* 카테고리별 섹션 */
+        .category-section {
+            margin-bottom: 50px;
+        }
+
+        .category-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 25px;
+            padding-left: 15px;
+            border-left: 5px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+
+        /* 그리드 레이아웃 */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 20px;
+        }
+
+        /* 카드 스타일 */
+        .card {
+            background: var(--card-bg);
+            border-radius: 20px;
+            padding: 25px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+            text-decoration: none;
+            border: 1px solid rgba(108, 92, 231, 0.1);
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 30px rgba(108, 92, 231, 0.15);
+            border-color: var(--primary-color);
+        }
+
+        .card h3 {
+            margin: 0 0 12px 0;
+            font-size: 1.2rem;
+            color: var(--primary-color);
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: var(--text-sub);
+            margin: 0;
+            word-break: keep-all;
+        }
+
+        .card .tag {
+            display: inline-block;
+            margin-top: 15px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            color: var(--secondary-color);
+        }
+
+        /* 파스텔 톤 배경 장식 */
+        .category-section:nth-child(odd) .category-title { border-color: var(--secondary-color); }
+        .category-section:nth-child(even) .category-title { border-color: var(--accent-color); }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>남들 다 할인받을 때 당신만 비싸게 가입한 자동차보험의 진실</h1>
+    </header>
+
+    <section class="category-section">
+        <div class="category-title">🚀 청춘을 위한 첫걸음 (20대/신규)</div>
+        <div class="grid">
+            <a href="https://bohumpromotione.cafe24.com/" target="_blank" class="card">
+                <h3>20대 자동차보험료</h3>
+                <p>"열정은 가득하지만 지갑은 얇은 당신을 위해, 첫 차의 무게를 덜어드립니다."</p>
+                <span class="tag">#젊음_응원</span>
+            </a>
+            <a href="https://directcarunmed.withusdone.com/" target="_blank" class="card">
+                <h3>만19세 자동차보험</h3>
+                <p>"생애 첫 운전의 설렘, 높은 보험료에 꺾이지 마세요. 최저가의 기적!"</p>
+                <span class="tag">#새내기운전자</span>
+            </a>
+            <a href="https://directcarunmet.withusdone.com/" target="_blank" class="card">
+                <h3>20살 자동차 보험</h3>
+                <p>"갓 성인이 된 당신의 당당한 로드트립, 가장 든든한 파트너가 되어줄게요."</p>
+                <span class="tag">#스무살의특권</span>
+            </a>
+            <a href="https://directcarunmee.withusdone.com/" target="_blank" class="card">
+                <h3>20대 자동차보험</h3>
+                <p>"복잡한 보장 내용은 NO! 20대 맞춤형 심플한 플랜을 경험하세요."</p>
+                <span class="tag">#심플플랜</span>
+            </a>
+            <a href="https://directcarunmeo.withusdone.com/" target="_blank" class="card">
+                <h3>만22세 자동차보험</h3>
+                <p>"운전이 익숙해질 무렵, 사고 걱정은 지우고 혜택만 채워 넣으세요."</p>
+                <span class="tag">#안전운전</span>
+            </a>
+            <a href="https://directcarunma.withusdone.com/" target="_blank" class="card">
+                <h3>20대 초반 자동차보험</h3>
+                <p>"사회로 나가는 첫 걸음, 당신의 드라이빙이 경제적일 수 있도록 도와줍니다."</p>
+                <span class="tag">#경제적자립</span>
+            </a>
+            <a href="https://bohumpromotionl.cafe24.com/" target="_blank" class="card">
+                <h3>자동차보험 신규</h3>
+                <p>"보험이 처음이라 막막하시죠? 베테랑 가이드가 제안하는 완벽한 시작."</p>
+                <span class="tag">#첫보험가이드</span>
+            </a>
+            <a href="https://directcarpromoti.cafe24.com/" target="_blank" class="card">
+                <h3>첫 자동차보험료</h3>
+                <p>"비싼 보험료는 옛말! 첫 보험부터 스마트하게 비교하고 선택하세요."</p>
+                <span class="tag">#절약의시작</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">📅 세대별 맞춤형 설계</div>
+        <div class="grid">
+            <a href="https://directcarunmer.withusdone.com/" target="_blank" class="card">
+                <h3>30대 자동차보험료</h3>
+                <p>"가족과 나를 위한 안정적인 선택. 가장 합리적인 구간을 찾아드립니다."</p>
+                <span class="tag">#베스트드라이버</span>
+            </a>
+            <a href="https://directcarunmex.withusdone.com/" target="_blank" class="card">
+                <h3>40대 자동차보험료</h3>
+                <p>"숙련된 운전 실력만큼 대우받는 보험료. 경험의 가치를 가격으로 증명하세요."</p>
+                <span class="tag">#경험의가치</span>
+            </a>
+            <a href="https://bohumpromotionk.cafe24.com/" target="_blank" class="card">
+                <h3>자동차보험 만26세</h3>
+                <p>"보험료가 확 낮아지는 매직 넘버 26! 지금 바로 할인율을 확인하세요."</p>
+                <span class="tag">#황금연령대</span>
+            </a>
+            <a href="https://directcarunmez.withusdone.com/" target="_blank" class="card">
+                <h3>만28세 자동차보험</h3>
+                <p>"안정기에 접어든 당신의 드라이빙 라이프를 위한 프리미엄 서포트."</p>
+                <span class="tag">#안정적선택</span>
+            </a>
+            <a href="https://directcarunmc.withusdone.com/" target="_blank" class="card">
+                <h3>만30세 자동차보험</h3>
+                <p>"진정한 어른의 보험. 품격은 높이고 가격 거품은 걷어냈습니다."</p>
+                <span class="tag">#품격의시작</span>
+            </a>
+            <a href="https://directcarunmef.withusdone.com/" target="_blank" class="card">
+                <h3>나이별 보험료</h3>
+                <p>"한 살이라도 젊을 때? 아니요, 지금 당신의 나이가 가장 저렴할 수 있습니다."</p>
+                <span class="tag">#맞춤형견적</span>
+            </a>
+            <a href="https://directupromotiony.withusdone.com/" target="_blank" class="card">
+                <h3>자동차보험 만나이</h3>
+                <p>"헷갈리는 만나이 계산, 저희가 대신 해드리고 최대 혜택을 찾아드려요."</p>
+                <span class="tag">#스마트계산</span>
+            </a>
+            <a href="https://directcarunmen.withusdone.com/" target="_blank" class="card">
+                <h3>자동차보험 연령</h3>
+                <p>"나이의 앞자리 숫자가 바뀔 때마다 챙겨야 할 필수 체크리스트!"</p>
+                <span class="tag">#라이프사이클</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">🔍 똑똑한 비교의 기술</div>
+        <div class="grid">
+            <a href="https://m.directcarpromotq.cafe24.com/" target="_blank" class="card">
+                <h3>다이렉트 비교견적</h3>
+                <p>"손안에서 펼쳐지는 가격 대첩! 가장 낮은 숫자를 잡는 사람이 승자입니다."</p>
+                <span class="tag">#모바일최적화</span>
+            </a>
+            <a href="https://bohumpromotionm.cafe24.com/" target="_blank" class="card">
+                <h3>비교견적사이트</h3>
+                <p>"여기저기 다닐 필요 있나요? 단 한 곳에서 모든 보험사를 꿰뚫어 보세요."</p>
+                <span class="tag">#원스톱쇼핑</span>
+            </a>
+            <a href="https://directupromotionx.withusdone.com/" target="_blank" class="card">
+                <h3>실시간 자동차보험</h3>
+                <p>"1초가 아까운 당신을 위해, 실시간으로 변하는 최저가를 즉시 포착합니다."</p>
+                <span class="tag">#실시간업데이트</span>
+            </a>
+            <a href="https://bohumpromotionp.cafe24.com/" target="_blank" class="card">
+                <h3>자동차보험 순위</h3>
+                <p>"남들이 많이 선택하는 데는 이유가 있습니다. 인기 랭킹으로 검증된 보험들."</p>
+                <span class="tag">#대세인증</span>
+            </a>
+            <a href="https://directupromotione.withusdone.com/" target="_blank" class="card">
+                <h3>보험료 계산기</h3>
+                <p>"몇 번의 클릭으로 끝나는 견적 산출. 생각보다 훨씬 저렴해서 놀라실걸요?"</p>
+                <span class="tag">#초스피드</span>
+            </a>
+            <a href="https://bohumpromotiong.cafe24.com/" target="_blank" class="card">
+                <h3>자동차보험 추천</h3>
+                <p>"당신의 라이프스타일을 분석해 딱 맞는 옷 같은 보험을 제안합니다."</p>
+                <span class="tag">#맞춤추천</span>
+            </a>
+            <a href="https://directupromotions.withusdone.com/" target="_blank" class="card">
+                <h3>자동차보험비</h3>
+                <p>"단돈 10원이라도 아끼고 싶은 마음, 그 마음을 담아 최저가를 설계합니다."</p>
+                <span class="tag">#짠테크보험</span>
+            </a>
+            <a href="https://directupromotionr.withusdone.com/" target="_blank" class="card">
+                <h3>다이렉트 추천</h3>
+                <p>"중간 마진은 빼고 보장은 꽉 채운, 현명한 운전자들의 비밀 레시피."</p>
+                <span class="tag">#다이렉트파워</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">🚗 내 차에 꼭 맞는 옷 (국산차)</div>
+        <div class="grid">
+            <a href="https://directupromotionz.withusdone.com/" target="_blank" class="card">
+                <h3>아반떼 보험료</h3>
+                <p>"국민차 아반떼, 국민가격으로 타세요. 가성비 끝판왕 보험 플랜."</p>
+                <span class="tag">#국민준중형</span>
+            </a>
+            <a href="https://directxpromotione.withusdone.com/" target="_blank" class="card">
+                <h3>그랜저 보험료</h3>
+                <p>"성공의 상징 그랜저, 보험료까지 성공적으로 관리하는 비법 대공개."</p>
+                <span class="tag">#성공의파트너</span>
+            </a>
+            <a href="https://carmpromotiono.withusdone.com/" target="_blank" class="card">
+                <h3>레이 보험료</h3>
+                <p>"박스카의 매력 레이! 경차 혜택에 보험료 할인까지 더블로 가져가세요."</p>
+                <span class="tag">#공간활용갑</span>
+            </a>
+            <a href="https://directxpromotiong.withusdone.com/" target="_blank" class="card">
+                <h3>제네시스 보험료</h3>
+                <p>"프리미엄 세단에 걸맞은 프리미엄 보장 시스템. 당신의 가치를 지켜드립니다."</p>
+                <span class="tag">#럭셔리드라이빙</span>
+            </a>
+            <a href="https://directxpromotiona.withusdone.com/" target="_blank" class="card">
+                <h3>카니발 보험료</h3>
+                <p>"우리 가족의 소중한 추억을 싣고 달리는 카니발, 안전 보장은 기본입니다."</p>
+                <span class="tag">#패밀리카</span>
+            </a>
+            <a href="https://carvpromotions.withusdone.com/" target="_blank" class="card">
+                <h3>쏘렌토 하이브리드</h3>
+                <p>"친환경 드라이빙의 완성은 경제적인 보험료입니다. 하이브리드 전용 혜택."</p>
+                <span class="tag">#친환경선택</span>
+            </a>
+            <a href="https://carmpromotions.withusdone.com/" target="_blank" class="card">
+                <h3>캐스퍼 보험료</h3>
+                <p>"작지만 강한 캐스퍼처럼, 보험료는 가볍지만 보장은 묵직하게 담았습니다."</p>
+                <span class="tag">#아이코닉경차</span>
+            </a>
+            <a href="https://carvpromotionf.withusdone.com/" target="_blank" class="card">
+                <h3>셀토스 보험료</h3>
+                <p>"도시의 세련된 SUV 셀토스, 보험료도 세련되게 다이어트 하세요."</p>
+                <span class="tag">#하이클래스SUV</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">🏎️ 럭셔리 & 수입차 라운지</div>
+        <div class="grid">
+            <a href="https://directupromotiona.withusdone.com/" target="_blank" class="card">
+                <h3>수입차 보험료</h3>
+                <p>"부품비 걱정되시나요? 수입차 전용 특약으로 수리비 부담을 확 낮췄습니다."</p>
+                <span class="tag">#수입차마스터</span>
+            </a>
+            <a href="https://carmpromotione.withusdone.com/" target="_blank" class="card">
+                <h3>벤츠 E클래스</h3>
+                <p>"명차의 품격에 어울리는 최상위 보장 서비스. 사고 시 완벽한 케어를 약속합니다."</p>
+                <span class="tag">#벤츠전용</span>
+            </a>
+            <a href="http://caropromotiong.withusdone.com/" target="_blank" class="card">
+                <h3>BMW 5시리즈</h3>
+                <p>"드라이빙의 즐거움에만 집중하세요. 보험 관리는 저희가 완벽하게 책임집니다."</p>
+                <span class="tag">#BMW전문</span>
+            </a>
+            <a href="https://directxpromotionr.withusdone.com/" target="_blank" class="card">
+                <h3>미니쿠퍼 보험료</h3>
+                <p>"톡톡 튀는 미니처럼, 개성 넘치는 당신만을 위한 맞춤형 보험 구성."</p>
+                <span class="tag">#미니라이프</span>
+            </a>
+            <a href="https://carnpromotionk.withusdone.com/" target="_blank" class="card">
+                <h3>포르쉐 보험료</h3>
+                <p>"압도적인 퍼포먼스 뒤에 숨겨진 철저한 방어막. 스포츠카 보험의 정석."</p>
+                <span class="tag">#드림카보호</span>
+            </a>
+            <a href="https://carvpromotionm.withusdone.com/" target="_blank" class="card">
+                <h3>렉서스 보험료</h3>
+                <p>"정숙함의 끝판왕 렉서스, 소리 없이 강한 보장 혜택을 직접 만나보세요."</p>
+                <span class="tag">#정숙한보장</span>
+            </a>
+            <a href="https://carnpromotiont.withusdone.com/" target="_blank" class="card">
+                <h3>아우디 A6</h3>
+                <p>"기술을 통한 진보, 그리고 보험을 통한 안심. 아우디 오너를 위한 특별한 제안."</p>
+                <span class="tag">#아우디케어</span>
+            </a>
+            <a href="https://carmpromotiont.withusdone.com/" target="_blank" class="card">
+                <h3>파나메라 보험료</h3>
+                <p>"당신의 파나메라가 도로 위에서 가장 안전한 섬이 되도록 설계해 드립니다."</p>
+                <span class="tag">#하이엔드클래스</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">⚡ 미래를 달리는 전기차 섹션</div>
+        <div class="grid">
+            <a href="https://directxpromotionl.withusdone.com/" target="_blank" class="card">
+                <h3>테슬라 보험</h3>
+                <p>"오토파일럿만큼 혁신적인 보험 관리. 테슬라 유저라면 반드시 확인하세요."</p>
+                <span class="tag">#테슬라라이프</span>
+            </a>
+            <a href="https://directupromotiond.withusdone.com/" target="_blank" class="card">
+                <h3>모델Y 보험료</h3>
+                <p>"대세 중의 대세 모델Y, 고가 배터리 걱정도 특약 하나로 완벽 해결!"</p>
+                <span class="tag">#배터리특약</span>
+            </a>
+            <a href="https://carvpromotionu.withusdone.com/" target="_blank" class="card">
+                <h3>아이오닉5 보험료</h3>
+                <p>"움직이는 거실 아이오닉5, 공간의 가치를 지켜주는 든든한 보험 우산."</p>
+                <span class="tag">#V2L안전</span>
+            </a>
+            <a href="https://carmpromotionf.withusdone.com/" target="_blank" class="card">
+                <h3>EV6 보험료</h3>
+                <p>"날렵한 EV6의 주행 성능을 뒷받침하는, 빈틈없는 프리미엄 전기차 보험."</p>
+                <span class="tag">#전기차매니아</span>
+            </a>
+            <a href="https://directupromotioni.withusdone.com/" target="_blank" class="card">
+                <h3>전기차 전용보험</h3>
+                <p>"충전 중 사고부터 배터리 파손까지, 내연기관차와는 다른 전기차 전용 케어."</p>
+                <span class="tag">#친환경전용</span>
+            </a>
+            <a href="https://carnpromotionz.withusdone.com/" target="_blank" class="card">
+                <h3>넥쏘 보험료</h3>
+                <p>"수소차 시대의 선두주자 넥쏘, 앞서가는 당신을 위한 선구적인 보험 플랜."</p>
+                <span class="tag">#수소차보험</span>
+            </a>
+            <a href="https://carvpromotionc.withusdone.com/" target="_blank" class="card">
+                <h3>아이오닉6 보험료</h3>
+                <p>"공기 저항은 낮추고 보험료 할인율은 높이고! 스마트한 전기 세단의 정석."</p>
+                <span class="tag">#스트림라이너</span>
+            </a>
+            <a href="https://carvpromotionb.withusdone.com/" target="_blank" class="card">
+                <h3>하이브리드 보험</h3>
+                <p>"두 개의 심장, 두 배의 혜택. 저공해 자동차 할인 혜택을 놓치지 마세요."</p>
+                <span class="tag">#듀얼코어할인</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">🚐 레저 & 특수 차량의 세계</div>
+        <div class="grid">
+            <a href="https://directxpromotionu.withusdone.com/" target="_blank" class="card">
+                <h3>캠핑카 자동차보험</h3>
+                <p>"주말의 낭만을 방해하는 예기치 못한 사고, 캠핑카 전용 보험으로 대비하세요."</p>
+                <span class="tag">#노마드라이프</span>
+            </a>
+            <a href="https://carvpromotiono.withusdone.com/" target="_blank" class="card">
+                <h3>화물차 보험료</h3>
+                <p>"성공을 향해 달리는 사업의 동반자. 비즈니스의 안전을 확실히 책임집니다."</p>
+                <span class="tag">#비즈니스파트너</span>
+            </a>
+            <a href="https://carmpromotionb.withusdone.com/" target="_blank" class="card">
+                <h3>픽업트럭 보험료</h3>
+                <p>"오프로드의 거친 질주도 걱정 끝! 픽업트럭 특화 보장으로 든든하게."</p>
+                <span class="tag">#오프로더</span>
+            </a>
+            <a href="https://carvpromotionr.withusdone.com/" target="_blank" class="card">
+                <h3>렉스턴 스포츠</h3>
+                <p>"레저와 업무를 동시에! 다목적 차량에 최적화된 하이브리드 보장 시스템."</p>
+                <span class="tag">#멀티플레이어</span>
+            </a>
+            <a href="https://caropromotions.withusdone.com/" target="_blank" class="card">
+                <h3>다마스 보험료</h3>
+                <p>"골목길의 영웅 다마스, 사장님의 땀방울이 헛되지 않게 보험료는 낮췄습니다."</p>
+                <span class="tag">#소상공인응원</span>
+            </a>
+            <a href="https://caropromotionm.withusdone.com/" target="_blank" class="card">
+                <h3>스포츠카 보험료</h3>
+                <p>"속도감을 즐기는 당신, 하지만 안전만큼은 양보할 수 없는 분들을 위한 선택."</p>
+                <span class="tag">#스피드매니아</span>
+            </a>
+            <a href="https://directxpromotionq.withusdone.com/" target="_blank" class="card">
+                <h3>트위지 보험료</h3>
+                <p>"초소형 전기차 트위지만의 귀여운 보험료. 도심 주행의 진정한 해답."</p>
+                <span class="tag">#도심형모빌리티</span>
+            </a>
+            <a href="https://carvpromotionx.withusdone.com/" target="_blank" class="card">
+                <h3>Z4 보험료</h3>
+                <p>"오픈 에어링의 자유, 그 자유를 완벽하게 보전해줄 프리미엄 로드스터 보험."</p>
+                <span class="tag">#로드스터감성</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">💡 놓치면 손해 보는 꿀팁</div>
+        <div class="grid">
+            <a href="https://directcarunmeb.withusdone.com/" target="_blank" class="card">
+                <h3>운전병 보험할인</h3>
+                <p>"나라를 지킨 귀한 시간, 운전 경력으로 인정받아 보험료를 대폭 낮추세요!"</p>
+                <span class="tag">#군필자우대</span>
+            </a>
+            <a href="https://bohumpromotionr.cafe24.com/" target="_blank" class="card">
+                <h3>경력인정 제도</h3>
+                <p>"장롱 면허는 이제 그만! 숨어있던 운전 경력을 찾아 보험료를 깎아드립니다."</p>
+                <span class="tag">#경력은자산</span>
+            </a>
+            <a href="https://carnpromotiond.withusdone.com/" target="_blank" class="card">
+                <h3>블랙박스 할인</h3>
+                <p>"장착만 해도 내려가는 가격. 당신의 눈이 되어주는 블랙박스, 보험료도 지켜줍니다."</p>
+                <span class="tag">#안전장치할인</span>
+            </a>
+            <a href="https://directupromotionn.withusdone.com/" target="_blank" class="card">
+                <h3>자녀 할인 특약</h3>
+                <p>"아이와 함께 타는 차는 더 안전하니까! 가족 사랑을 보험료 할인으로 돌려받으세요."</p>
+                <span class="tag">#아이행복할인</span>
+            </a>
+            <a href="https://carnpromotionc.withusdone.com/" target="_blank" class="card">
+                <h3>부부 한정 특약</h3>
+                <p>"둘이서 하나로! 부부가 함께 운전한다면 가장 경제적인 가입 방법입니다."</p>
+                <span class="tag">#부부심쿵할인</span>
+            </a>
+            <a href="https://directcarpromots.cafe24.com/" target="_blank" class="card">
+                <h3>가족한정 범위</h3>
+                <p>"누구까지 보장될까? 복잡한 가족 관계, 가장 유리한 범위를 짚어드립니다."</p>
+                <span class="tag">#가족안전지킴이</span>
+            </a>
+            <a href="https://directupromotiont.withusdone.com/" target="_blank" class="card">
+                <h3>보험료 할부</h3>
+                <p>"한 번에 내기 부담스러운 보험료? 무이자 할부 혜택으로 가볍게 나눠 내세요."</p>
+                <span class="tag">#부담제로</span>
+            </a>
+            <a href="https://carvpromotionw.withusdone.com/" target="_blank" class="card">
+                <h3>자동차보험 요율</h3>
+                <p>"알면 이득, 모르면 손해! 보험 요율의 비밀을 파헤쳐 최적의 시기를 잡으세요."</p>
+                <span class="tag">#정보가돈이다</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">🔄 중고차 & 필수 보험</div>
+        <div class="grid">
+            <a href="https://directupromotionp.withusdone.com/" target="_blank" class="card">
+                <h3>중고차 보험료</h3>
+                <p>"새 차 부럽지 않은 중고차 라이프. 차령에 딱 맞는 실속 보험을 제안합니다."</p>
+                <span class="tag">#알뜰중고차</span>
+            </a>
+            <a href="https://carnpromotione.withusdone.com/" target="_blank" class="card">
+                <h3>중고차 보험</h3>
+                <p>"인수 즉시 가입해야 하는 중고차 보험, 당일 가입과 승인이 한 번에 가능합니다."</p>
+                <span class="tag">#당일가입승인</span>
+            </a>
+            <a href="https://directxpromotionh.withusdone.com/" target="_blank" class="card">
+                <h3>중고차 책임보험</h3>
+                <p>"의무 보험이라고 대충 가입 금물! 최소 비용으로 최대 효율을 누리는 법."</p>
+                <span class="tag">#의무보험마스터</span>
+            </a>
+            <a href="https://directcarpromotv.cafe24.com/" target="_blank" class="card">
+                <h3>책임보험 가격</h3>
+                <p>"법적 필수 요건은 충족하면서 지갑 부담은 덜어낸 알짜배기 가격 정보."</p>
+                <span class="tag">#실속형선택</span>
+            </a>
+            <a href="https://directupromotionv.withusdone.com/" target="_blank" class="card">
+                <h3>자동차 책임보험</h3>
+                <p>"복잡한 설명은 빼고, 당신이 당장 가입해야 할 필수 리스트만 모았습니다."</p>
+                <span class="tag">#필수체크</span>
+            </a>
+            <a href="https://directcarpromota.cafe24.com/" target="_blank" class="card">
+                <h3>자차보험 가입</h3>
+                <p>"내 차를 위한 완벽한 방패. 사고 수리비 걱정을 덜어주는 마법의 솔루션."</p>
+                <span class="tag">#내차보호</span>
+            </a>
+            <a href="https://carvpromotiony.withusdone.com/" target="_blank" class="card">
+                <h3>자차보험 할증</h3>
+                <p>"사고 나서 할증될까 무서우신가요? 할증 폭을 최소화하는 방어 전략 공개."</p>
+                <span class="tag">#할증방어군</span>
+            </a>
+            <a href="https://directupromotionq.withusdone.com/" target="_blank" class="card">
+                <h3>자동차보험 만기</h3>
+                <p>"만기 한 달 전! 갱신 시기를 놓치면 과태료 폭탄? 미리 준비하고 혜택 받으세요."</p>
+                <span class="tag">#갱신알람</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="category-section">
+        <div class="category-title">🏁 완벽한 마무리를 위한 가이드</div>
+        <div class="grid">
+            <a href="https://bohumpromotiont.cafe24.com/" target="_blank" class="card">
+                <h3>자동차보험 종류</h3>
+                <p>"대인, 대물, 자손... 외계어 같은 보험 용어들을 가장 쉽게 풀어드립니다."</p>
+                <span class="tag">#용어정복</span>
+            </a>
+            <a href="https://carnpromotiona.withusdone.com/" target="_blank" class="card">
+                <h3>자동차보험 특약</h3>
+                <p>"넣을까 말까 고민되는 특약들, 실제 사례로 본 '꼭 필요한 특약' 가이드."</p>
+                <span class="tag">#특약백과사전</span>
+            </a>
+            <a href="https://directupromotionw.withusdone.com/" target="_blank" class="card">
+                <h3>보험 가입방법</h3>
+                <p>"전화 한 통 없이 스마트폰으로 5분 만에 끝내는 현대적 보험 가입 절차."</p>
+                <span class="tag">#디지털드라이버</span>
+            </a>
+            <a href="https://bohumpromotionc.cafe24.com/" target="_blank" class="card">
+                <h3>자동차보험료 1년</h3>
+                <p>"1년 치 보험료가 부담될 때, 연간 예산 세우는 법부터 절약 팁까지."</p>
+                <span class="tag">#연간예산관리</span>
+            </a>
+            <a href="https://bohumpromotionb.cafe24.com/" target="_blank" class="card">
+                <h3>보험 할증기준</h3>
+                <p>"아차 하는 순간의 사고, 내 보험료가 얼마나 오를지 미리 계산해 보세요."</p>
+                <span class="tag">#위기관리</span>
+            </a>
+            <a href="https://carvpromotionz.withusdone.com/" target="_blank" class="card">
+                <h3>외제차 보험료</h3>
+                <p>"슈퍼카부터 엔트리급 외제차까지, 보험사별 요율 차이를 한눈에 확인!"</p>
+                <span class="tag">#외제차매뉴얼</span>
+            </a>
+            <a href="https://directupromotionl.withusdone.com/" target="_blank" class="card">
+                <h3>차량 보험료</h3>
+                <p>"차종, 나이, 경력을 조합해 만드는 세상에서 단 하나뿐인 당신의 견적서."</p>
+                <span class="tag">#커스텀견적</span>
+            </a>
+            <a href="https://directcarpromotw.cafe24.com/" target="_blank" class="card">
+                <h3>다이렉트 비교</h3>
+                <p>"보험 설계사 수수료만큼 가격을 깎았습니다. 더 투명하고 더 저렴하게."</p>
+                <span class="tag">#투명한가격</span>
+            </a>
+        </div>
+    </section>
+</div>
+
+<script>
+    // 카테고리 섹션들을 랜덤으로 섞기
+    const container = document.querySelector('.container');
+    const sections = Array.from(document.querySelectorAll('.category-section'));
+    
+    // Shuffle 함수
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // 각 섹션 내의 카드들도 랜덤으로 섞기
+    sections.forEach(section => {
+        const grid = section.querySelector('.grid');
+        const cards = Array.from(grid.querySelectorAll('.card'));
+        shuffle(cards);
+        cards.forEach(card => grid.appendChild(card));
+    });
+
+    // 섹션 자체를 섞어서 다시 배치
+    shuffle(sections);
+    sections.forEach(section => container.appendChild(section));
+</script>
+
+</body>
 </html>
